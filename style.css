@@ -1,0 +1,22 @@
+.stack1{
+    border:solid;
+    display: flex;
+    flex-direction: column;
+    
+    width: 80vw;
+    height:30vh;
+
+}
+.stack2{
+    border:solid;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    height:30vh;
+
+}
+.card{
+    border:solid;
+    height:25%;
+    width: 25%;
+}
