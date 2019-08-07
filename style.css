@@ -1,6 +1,11 @@
+body{
+    /* image from Google Images */
+    background-image: url(Images/galaxy-background-2981.jpeg);
+}
 header{
     display:flex;
     justify-content:space-between;
+    color: white;
 }
 .scoreContainer{
     display:flex;
@@ -10,15 +15,16 @@ header{
     width:300px;
 }
 .score{
-    border: solid;
+    border: solid blue;
     font-size: 3em;
     text-align: right;
-    width:100px;
+    width:125px;
     height:50px;
-    margin-top:30px;
+    margin-top:40px;
 }
 h1{
-font-size: 3em;
+font-size: 3.5em;
+text-shadow: 3px 3px 3px rgb(209, 90, 110);
 }
 span{
     font-style: italic;
