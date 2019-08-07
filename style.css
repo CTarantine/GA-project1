@@ -44,7 +44,7 @@ audio{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: fixed;
+    position: absolute;
     align-items: center;
     z-index:2;
     width: 25vw;
@@ -74,3 +74,33 @@ margin-top:10%;
     color:white;
     background-color: black;
 }
+
+.modal{
+    position: fixed;
+    z-index:20;
+    height: 70vh;
+    width: 70vw;
+    border: solid red;
+    margin-left:15vw;
+    margin-bottom: 10vh;
+}
+.question{
+    border: solid yellow;
+    height:300px;
+    width:300px;
+}
+.answers{
+    border: solid blue;  
+}
+.answerbox{
+    border: solid green;
+    height:30px;
+    width:300px;
+}
+
+
+
+
+
+
+/* add keyframe animation to modal */
