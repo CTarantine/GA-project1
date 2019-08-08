@@ -57,7 +57,7 @@ audio {
     z-index: 2;
     width: 25vw;
     height: 80vh;
-    margin-left: 40%;
+    margin-left: 38%;
 }
 
 /* left and right cards */
@@ -68,7 +68,7 @@ audio {
     justify-content: space-between;
     width: 65vw;
     /* height:30vh; */
-    margin-left: 20%;
+    margin-left: 18%;
     margin-top: 10%;
 }
 
@@ -83,6 +83,9 @@ audio {
     color: white;
     background-color: black;
     padding-top: 20px;
+}
+.card:hover{
+border:solid yellow;
 }
 
 .modal {

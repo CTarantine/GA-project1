@@ -3,12 +3,36 @@ console.log("ello love")
 
 
 //close Q&A modal
-document.querySelector(".close").addEventListener("click", function(){
-    document.querySelector(".modal").style.display ="none"
+document.querySelector(".close").addEventListener("click", function () {
+    document.querySelector(".modal").style.display = "none"
 })
 
 //display Q&A
-document.querySelector("right").addEventListener("click",function(){
+document.querySelector("#right").addEventListener("click", function () {
+    // console.log("working")
+    document.querySelector(".modal").style.display = "block";
+    let question = ["sampleQuestion1", "sampleQuestion2","sampleQuestion3"];
+    let answerA = ["sampleAnswer1", "sampleAnswerI","sampleAnsweri"];
+    let answerB = ["sampleAnswer2", "sampleAnswerII","sampleAnswerii"];
+    let answerC = ["sampleAnswer3", "sampleAnswerIII","sampleAnsweriii"];
+    let answerD = ["sampleAnswer4", "sampleAnswerIV","sampleAnsweriv"];
+    for (let i = 0; i < question.length;i++){
+        document.querySelector("#questionbox").innerHTML = question[i];
+    }
+    for (let i = 0; i < answerA.length; i++) {
+        document.querySelector("#a1").innerHTML = answerA[i];
+        
+    }
+    for (let i = 0; i < answerB.length; i++) {
+        document.querySelector("#a2").innerHTML = answerB[i];
+        
+    }
+    for (let i = 0; i < answerC.length; i++) {
+        document.querySelector("#a3").innerHTML = answerC[i];
+    }
+    for (let i = 0; i < answerD.length; i++) {
+        document.querySelector("#a4").innerHTML = answerD[i];
+    }
 
 })
 
@@ -20,27 +44,8 @@ document.querySelector("right").addEventListener("click",function(){
 // 5. value displays in proper places and keeps running total
 // 6. card appearance changes when end of array reached (display:none)
 
-document.querySelector("questionbox").innerHTML=[];
-document.querySelector("a1").innerHTML=[];
-document.querySelector("a2").innerHTML=[];
-document.querySelector("a3").innerHTML=[];
-document.querySelector("a4").innerHTML=[];
-
-let question = ["blue"]
-let a = []
-let c = []
-let d = []
-let e = []
 
 
-sampleQuestion1
-sampleAnswer1
-sampleAnswer1
-sampleAnswer1
-sampleAnswer1
 
-sampleQuestion2
-sampleAnswer2
-sampleAnswer2
-sampleAnswer2
-sampleAnswer2
+
+
