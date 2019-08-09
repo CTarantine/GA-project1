@@ -107,6 +107,10 @@ border:solid yellow;
     font-size: 2em;
     cursor: pointer;
 }
+
+.close:hover{
+    color:yellow;
+}
 .question {
     /* border: solid yellow; */
     height: 20%;
@@ -135,6 +139,9 @@ border:solid yellow;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
+}
+.answerbox:hover{
+    color:yellow;
 }
 
 
