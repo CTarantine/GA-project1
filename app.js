@@ -58,5 +58,9 @@ for (let x = 0; x < choices.length; x++) {
         document.querySelector(".score").innerHTML = score;
         document.querySelector(".modal").style.display = "none";
         i++;
+        if(i >= question.length && i >= answerA.length && i >= answerB.length && i >= answerC.length && i >= answerD.length && i >= correct.length) {
+            document.querySelector(".modal").style.display = "none";
+            document.querySelector("#right").style.display = "none";
+        }
     })
 }
