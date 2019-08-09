@@ -29,7 +29,7 @@ document.querySelector("#right").addEventListener("click", function () {
     answerC = ["What is fire?", "sampleAnswerIII", "sampleAnsweriii"];
     answerD = ["What is earth?", "sampleAnswerIV", "sampleAnsweriv"];
     correct = ["What is water?", "sampleAnswerI", "sampleAnsweriv"];
-    points = parseFloat("100");
+    points = parseFloat("300");
 
     if (i < question.length && i < answerA.length && i < answerB.length && i < answerC.length && i < answerD.length && i < correct.length) {
         document.querySelector("#questionbox").innerHTML = question[i];
@@ -38,29 +38,25 @@ document.querySelector("#right").addEventListener("click", function () {
         document.querySelector("#a3").innerHTML = answerC[i];
         document.querySelector("#a4").innerHTML = answerD[i];
         correct[i];
-        //i++;
-
-        // else {
-        //     document.querySelector(".modal").style.display = "none";
-        //     document.querySelector("#right").style.color = "black";
-        // }
-
-        let choices = document.querySelectorAll(".answerbox")
-        for (let x = 0; x < choices.length; x++) {
-            choices[x].addEventListener("click", function (event) {
-                const selected = event.target.innerHTML
-                console.log(correct[i])
-                console.log(selected)
-                if (selected === correct[i]) {
-                    console.log(score + points);
-                     score = score + points
-                }
-                else {
-                    console.log(score - points);
-                      score = score - points
-                }
-                document.querySelector(".score").innerHTML = score;
-            })
-        }
     }
 })
+
+let choices = document.querySelectorAll(".answerbox")
+for (let x = 0; x < choices.length; x++) {
+    choices[x].addEventListener("click", function (event) {
+        const selected = event.target.innerHTML
+        console.log(correct[i])
+        console.log(selected)
+        if (selected === correct[i]) {
+            console.log(score + points);
+            score = score + points
+        }
+        else {
+            console.log(score - points);
+            score = score - points
+        }
+        document.querySelector(".score").innerHTML = score;
+        document.querySelector(".modal").style.display = "none";
+        i++;
+    })
+}
