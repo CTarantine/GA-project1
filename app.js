@@ -18,6 +18,7 @@ let i = 0;
 //keeps track of score
 let score = parseFloat(document.querySelector(".score").innerHTML);
 
+
     //display Q&A
     document.querySelector("#right").addEventListener("click", function () {
         // console.log("working")
@@ -38,7 +39,7 @@ let score = parseFloat(document.querySelector(".score").innerHTML);
                 document.querySelector("#a4").innerHTML = answerD[i];
                 correct[i];
                 i++;
-            }
+            
             // else {
             //     document.querySelector(".modal").style.display = "none";
             //     document.querySelector("#right").style.color = "black";
@@ -46,13 +47,25 @@ let score = parseFloat(document.querySelector(".score").innerHTML);
             
         let choices = document.querySelectorAll(".answerbox")
         for (let x = 0; x < choices.length; x++) {
-            choices[x].addEventListener("click", function () {
-                if (answerA[i] === correct[i]) {
+            choices[x].addEventListener("click", function (event) {
+                console.log(event.target.innerText)
+                console.dir(event)
+                if (answerA[i].value === correct[i]) {
+                    console.log(score + points)
+                }
+                if (answerB[i].value === correct[i]) {
+                    console.log(score + points)
+                }
+                if (answerB[i].value === correct[i]) {
+                    console.log(score + points)
+                }
+                if (answerB[i].value === correct[i]) {
                     console.log(score + points)
                 }
                 else {
                     console.log(score - points)
                 }
             })
+        }
         }
             })

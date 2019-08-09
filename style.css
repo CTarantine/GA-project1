@@ -21,10 +21,10 @@ header {
 .score {
     /* border: solid blue; */
     font-size: 3em;
-    text-align: right;
+    text-align: center;
     width: 125px;
     height: 50px;
-    margin-top: 40px;
+    margin-top: 45px;
     margin-right: 30px;
     text-shadow: 3px 3px 3px rgb(209, 90, 110);
 }
@@ -78,7 +78,7 @@ audio {
     width: 200px;
     border-radius: 10%;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 5em;
     font-weight: bold;
     color: white;
     background-color: black;
@@ -118,6 +118,7 @@ border:solid yellow;
     color: white;
     text-shadow: 2px 2px 2px black;
     background-color: rgb(158, 92, 221);
+    text-align:center;
 }
 
 .answers {
@@ -139,6 +140,7 @@ border:solid yellow;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
+    cursor: pointer;
 }
 .answerbox:hover{
     color:yellow;
