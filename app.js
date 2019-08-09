@@ -43,7 +43,8 @@ let score = parseFloat(document.querySelector(".score").innerHTML);
             //     document.querySelector(".modal").style.display = "none";
             //     document.querySelector("#right").style.color = "black";
             // }
-            let choices = document.querySelectorAll(".answerbox")
+            
+        let choices = document.querySelectorAll(".answerbox")
         for (let x = 0; x < choices.length; x++) {
             choices[x].addEventListener("click", function () {
                 if (answerA[i] === correct[i]) {
@@ -53,5 +54,5 @@ let score = parseFloat(document.querySelector(".score").innerHTML);
                     console.log(score - points)
                 }
             })
-            
-    )}
+        }
+            })
