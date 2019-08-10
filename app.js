@@ -1,9 +1,9 @@
 console.log("ello love")
 
 //close Q&A modal
-document.querySelector(".close").addEventListener("click", function () {
-    document.querySelector(".modal").style.display = "none"
-})
+// document.querySelector(".close").addEventListener("click", function () {
+//     document.querySelector(".modal").style.display = "none"
+// })
 
 let question = [];
 let answerA = [];
@@ -27,12 +27,12 @@ let score = parseFloat(document.querySelector(".score").innerHTML);
 document.querySelector("#right").addEventListener("click", function () {
     // console.log("working")
     runSequence(a)
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom", "sampleQuestion2", "sampleQuestion3"];
-    answerA = ["What is earth?", "sampleAnswerI", "sampleAnsweri"];
-    answerB = ["What is water?", "sampleAnswerII", "sampleAnswerii"];
-    answerC = ["What is fire?", "sampleAnswerIII", "sampleAnsweriii"];
-    answerD = ["What is earth?", "sampleAnswerIV", "sampleAnsweriv"];
-    correct = ["What is water?", "sampleAnswerI", "sampleAnsweriv"];
+    question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"];
+    answerA = ["sampleAnswer1", "sampleAnswerI", "sampleAnsweri"];
+    answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"];
+    answerC = ["What is?", "sampleAnswerIII", "sampleAnsweriii"];
+    answerD = ["What is?", "sampleAnswerIV", "sampleAnsweriv"];
+    correct = ["What is?", "sampleAnswerI", "sampleAnsweriv"];
     points = parseFloat("300");
 
     if (a < question.length && a < answerA.length && a < answerB.length && a < answerC.length && a < answerD.length && a < correct.length) {
@@ -75,12 +75,12 @@ document.querySelector("#bottom").addEventListener("click", function () {
 
 document.querySelector("#left").addEventListener("click", function () {
     runSequence(c)
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom", "sampleQuestion2", "sampleQuestion3"];
-    answerA = ["What is earth?", "sampleAnswerI", "sampleAnsweri"];
-    answerB = ["What is water?", "sampleAnswerII", "sampleAnswerii"];
-    answerC = ["What is fire?", "sampleAnswerIII", "sampleAnsweriii"];
-    answerD = ["What is earth?", "sampleAnswerIV", "sampleAnsweriv"];
-    correct = ["What is water?", "sampleAnswerI", "sampleAnsweriv"];
+    question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"];
+    answerA = ["What is?", "sampleAnswerI", "sampleAnsweri"];
+    answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"];
+    answerC = ["What is?", "sampleAnswerIII", "sampleAnsweriii"];
+    answerD = ["What is?", "sampleAnswerIV", "sampleAnsweriv"];
+    correct = ["What is?", "sampleAnswerI", "sampleAnsweriv"];
     points = parseFloat("700");
 
     if (c < question.length && c < answerA.length && c < answerB.length && c < answerC.length && c < answerD.length && c < correct.length) {
@@ -99,12 +99,12 @@ document.querySelector("#left").addEventListener("click", function () {
 
 document.querySelector("#top").addEventListener("click", function () {
     runSequence(d)
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom", "sampleQuestion2", "sampleQuestion3"];
-    answerA = ["What is earth?", "sampleAnswerI", "sampleAnsweri"];
-    answerB = ["What is water?", "sampleAnswerII", "sampleAnswerii"];
-    answerC = ["What is fire?", "sampleAnswerIII", "sampleAnsweriii"];
-    answerD = ["What is earth?", "sampleAnswerIV", "sampleAnsweriv"];
-    correct = ["What is water?", "sampleAnswerI", "sampleAnsweriv"];
+    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "sampleQuestion3"];
+    answerA = ["What is earth?", "Who is Ciara?", "sampleAnsweri"];
+    answerB = ["What is water?", "Who is Kelly Rowland?", "sampleAnswerii"];
+    answerC = ["What is fire?", "Who is Beyoncé?", "sampleAnsweriii"];
+    answerD = ["What is earth?", "Who is Ari Lennox?", "sampleAnsweriv"];
+    correct = ["What is water?", "Who is Beyoncé", "sampleAnsweriv"];
     points = parseFloat("100");
 
     if (d < question.length && d < answerA.length && d < answerB.length && d < answerC.length && d < answerD.length && d < correct.length) {
@@ -140,11 +140,6 @@ let runSequence = function (i) {
             }
             document.querySelector(".score").innerHTML = score;
             document.querySelector(".modal").style.display = "none";
-            // i++;
-            // if (i >= question.length && i >= answerA.length && i >= answerB.length && i >= answerC.length && i >= answerD.length && i >= correct.length) {
-            //     document.querySelector(".modal").style.display = "none";
-            //     document.querySelector("#right").style.display = "none";
-            //}
         })
     }
 }
