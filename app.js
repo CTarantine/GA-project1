@@ -22,6 +22,8 @@ let d = 0;;
 //keeps track of score
 let score = parseFloat(document.querySelector(".score").innerHTML);
 
+let choices = document.querySelectorAll(".answerbox")
+
 
 //display Q&A
 document.querySelector("#right").addEventListener("click", function () {
@@ -98,13 +100,14 @@ document.querySelector("#left").addEventListener("click", function () {
 })
 
 document.querySelector("#top").addEventListener("click", function () {
-    runSequence(d)
+    // runSequence(d)
+    document.querySelector(".modal").style.display = "block";
     question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "sampleQuestion3"];
     answerA = ["What is earth?", "Who is Ciara?", "sampleAnsweri"];
     answerB = ["What is water?", "Who is Kelly Rowland?", "sampleAnswerii"];
     answerC = ["What is fire?", "Who is Beyoncé?", "sampleAnsweriii"];
     answerD = ["What is earth?", "Who is Ari Lennox?", "sampleAnsweriv"];
-    correct = ["What is water?", "Who is Beyoncé", "sampleAnsweriv"];
+    correct = ["What is water?", "Who is Beyoncé?", "sampleAnsweriv"];
     points = parseFloat("100");
 
     if (d < question.length && d < answerA.length && d < answerB.length && d < answerC.length && d < answerD.length && d < correct.length) {
@@ -115,31 +118,59 @@ document.querySelector("#top").addEventListener("click", function () {
         document.querySelector("#a4").innerHTML = answerD[d];
         correct[d];
     }
-    d++
+    // d++
     if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
         document.querySelector("#top").style.color = "black";
+        document.querySelector("#top").style.opacity = "0.6";
     }
 })
 
-let runSequence = function (i) {
-    let choices = document.querySelectorAll(".answerbox")
-    document.querySelector(".modal").style.display = "block";
+// let runSequence = function (i) {
+//     let choices = document.querySelectorAll(".answerbox")
+//     document.querySelector(".modal").style.display = "block";
 
-    for (let x = 0; x < choices.length; x++) {
-        choices[x].addEventListener("click", function (event) {
-            const selected = event.target.innerHTML
-            console.log(correct[i])
-            console.log(selected)
-            if (selected === correct[i]) {
-                console.log(score + points);
-                score = score + points
-            }
-            else {
-                console.log(score - points);
-                score = score - points
-            }
-            document.querySelector(".score").innerHTML = score;
-            document.querySelector(".modal").style.display = "none";
-        })
-    }
+//     for (let x = 0; x < choices.length; x++) {
+//         choices[x].addEventListener("click", function (event) {
+//             const selected = event.target.innerHTML
+//             console.log(correct[i])
+//             console.log(selected)
+//             if (selected === correct[i]) {
+//                 console.log(score + points);
+//                 score = score + points
+//             }
+//             else {
+//                 console.log(score - points);
+//                 score = score - points
+//             }
+//             document.querySelector(".score").innerHTML = score;
+//             document.querySelector(".modal").style.display = "none";
+//         })
+//     }
+// }
+
+for (let x = 0; x < choices.length; x++) {
+    choices[x].addEventListener("click", function (event) {
+        const selected = event.target.innerHTML
+        console.log(correct[d])
+        console.log(selected)
+        if (selected === correct[d]) {
+            console.log(score + points);
+            score = score + points
+        }
+        else {
+            console.log(score - points);
+            score = score - points
+        }
+        document.querySelector(".score").innerHTML = score;
+        document.querySelector(".modal").style.display = "none";
+        d++;
+        if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
+            document.querySelector("#top").style.color = "black";
+            document.querySelector("#top").style.opacity = "0.6";
+            document.querySelector("#top").style.border = "solid black";
+            document.querySelector("#top").addEventListener("click", function () {
+                document.querySelector(".modal").style.display = "none"
+            })
+        }
+    })
 }
