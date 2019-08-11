@@ -5,6 +5,11 @@ console.log("ello love")
 //     document.querySelector(".modal").style.display = "none"
 // })
 
+// audio from https://www.zapsplat.com/?s=voice+correct&post_type=music&sound-effect-category-id=
+let correctAnswer = new Audio(src="Audio/correct.mp3");
+// audio from https://www.zapsplat.com/?s=voice+incorrect&post_type=music&sound-effect-category-id= 
+let incorrectAnswer = new Audio(src="Audio/incorrect.mp3");
+
 
 let question = [];
 let answerA = [];
@@ -71,10 +76,12 @@ for (let x = 0; x < choices.length; x++) {
         console.log(event.currentTarget)
         if (selected === correct[a]) {
             console.log(score + points);
+            correctAnswer.play();
             score = score + points
         }
         else {
             console.log(score - points);
+            incorrectAnswer.play();
             score = score - points
         }
         document.querySelector(".score").innerHTML = score;
@@ -118,10 +125,12 @@ for (let x = 0; x < choices.length; x++) {
         console.log(selected)
         if (selected === correct[b]) {
             console.log(score + points);
+            correctAnswer.play();
             score = score + points
         }
         else {
             console.log(score - points);
+            incorrectAnswer.play();
             score = score - points
         }
         document.querySelector(".score").innerHTML = score;
@@ -165,10 +174,12 @@ for (let x = 0; x < choices.length; x++) {
         console.log(selected)
         if (selected === correct[c]) {
             console.log(score + points);
+            correctAnswer.play();
             score = score + points
         }
         else {
             console.log(score - points);
+            incorrectAnswer.play();
             score = score - points
         }
         document.querySelector(".score").innerHTML = score;
@@ -191,7 +202,7 @@ topCard.addEventListener("click", function () {
     answerA = ["What is earth?", "Who is Ciara?", "sampleAnsweri"];
     answerB = ["What is water?", "Who is Kelly Rowland?", "sampleAnswerii"];
     answerC = ["What is fire?", "Who is Beyoncé?", "sampleAnsweriii"];
-    answerD = ["What is earth?", "Who is Ari Lennox?", "sampleAnsweriv"];
+    answerD = ["What is air?", "Who is Ari Lennox?", "sampleAnsweriv"];
     correct = ["What is water?", "Who is Beyoncé?", "sampleAnsweriv"];
     points = parseFloat("100");
 
@@ -211,10 +222,12 @@ for (let x = 0; x < choices.length; x++) {
         console.log(selected)
         if (selected === correct[d]) {
             console.log(score + points);
+            correctAnswer.play();
             score = score + points
         }
         else {
             console.log(score - points);
+            incorrectAnswer.play();
             score = score - points
         }
         document.querySelector(".score").innerHTML = score;
