@@ -5,6 +5,7 @@ console.log("ello love")
 //     document.querySelector(".modal").style.display = "none"
 // })
 
+
 let question = [];
 let answerA = [];
 let answerB = [];
@@ -27,18 +28,18 @@ let leftCard = document.querySelector("#left");
 let topCard = document.querySelector("#top");
 
 
-let modal = document.querySelector(".modal")
-let modal2 = document.querySelector(".modal2")
-let modal3 = document.querySelector(".modal3")
-let modal4 = document.querySelector(".modal4")
+let modal = document.querySelector(".modal");
+let modal2 = document.querySelector(".modal2");
+let modal3 = document.querySelector(".modal3");
+let modal4 = document.querySelector(".modal4");
 
 //keeps track of score
 let score = parseFloat(document.querySelector(".score").innerHTML);
 
-const choices = document.querySelectorAll(".answerbox")
-const choices2 = document.querySelectorAll(".answerbox2")
-const choices3 = document.querySelectorAll(".answerbox3")
-const choices4 = document.querySelectorAll(".answerbox4")
+let choices = document.querySelectorAll(".answerbox");
+let choices2 = document.querySelectorAll(".answerbox2");
+let choices3 = document.querySelectorAll(".answerbox3");
+let choices4 = document.querySelectorAll(".answerbox4");
 
 
 rightCard.addEventListener("click", function () {
