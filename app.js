@@ -12,22 +12,35 @@ let answerC = [];
 let answerD = [];
 let correct = [];
 
-//array items
+//rightCard array items
 let a = 0;
+//bottomCard array items
 let b = 0;
-let c = 0;;
-let d = 0;;
+//leftCard array items
+let c = 0;
+//topCard array items
+let d = 0;
+
+let rightCard = document.querySelector("#right");
+let bottomCard = document.querySelector("#bottom");
+let leftCard = document.querySelector("#left");
+let topCard = document.querySelector("#top");
+
+
+let modal = document.querySelector(".modal")
 
 //keeps track of score
 let score = parseFloat(document.querySelector(".score").innerHTML);
 
-const choices= document.querySelectorAll(".answerbox")
+const choices = document.querySelectorAll(".answerbox")
+
+function playCard(){}
 
 
 //display Q&A
-document.querySelector("#right").addEventListener("click", function () {
+rightCard.addEventListener("click", function () {
     // console.log("working")
-    document.querySelector(".modal").style.display = "block";
+    modal.style.display = "block";
     question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"];
     answerA = ["sampleAnswer1", "sampleAnswerI", "sampleAnsweri"];
     answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"];
@@ -44,11 +57,8 @@ document.querySelector("#right").addEventListener("click", function () {
         document.querySelector("#a4").innerHTML = answerD[a];
         correct[a];
     }
-    if (a >= question.length && a >= answerA.length && a >= answerB.length && a >= answerC.length && a >= answerD.length && a >= correct.length) {
-        document.querySelector("#right").style.color = "black";
-        document.querySelector("#right").style.opacity = "0.6";
-    }
 })
+
 for (let x = 0; x < choices.length; x++) {
     choices[x].addEventListener("click", function (event) {
         const selected = event.target.innerHTML
@@ -63,21 +73,22 @@ for (let x = 0; x < choices.length; x++) {
             score = score - points
         }
         document.querySelector(".score").innerHTML = score;
-        document.querySelector(".modal").style.display = "none";
+        modal.style.display = "none";
         a++;
         if (a >= question.length && a >= answerA.length && a >= answerB.length && a >= answerC.length && a >= answerD.length && a >= correct.length) {
-            document.querySelector("#right").style.color = "black";
-            document.querySelector("#right").style.opacity = "0.6";
-            document.querySelector("#right").style.border = "solid black";
-            document.querySelector("#right").addEventListener("click", function () {
-                document.querySelector(".modal").style.display = "none"
+            rightCard.style.color = "black";
+            rightCard.style.opacity = "0.6";
+            rightCard.style.border = "solid black";
+            rightCard.addEventListener("click", function () {
+                modal.style.display = "none"
             })
         }
     })
 }
 
-// document.querySelector("#bottom").addEventListener("click", function () {
-//     document.querySelector(".modal").style.display = "block";
+
+// bottomCard.addEventListener("click", function () {
+//     modal.style.display = "block";
 //     question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom", "sampleQuestion2", "sampleQuestion3"];
 //     answerA = ["What is earth?", "sampleAnswerI", "sampleAnsweri"];
 //     answerB = ["What is water?", "sampleAnswerII", "sampleAnswerii"];
@@ -94,14 +105,10 @@ for (let x = 0; x < choices.length; x++) {
 //         document.querySelector("#a4").innerHTML = answerD[b];
 //         correct[b];
 //     }
-//     if (b >= question.length && b >= answerA.length && b >= answerB.length && b >= answerC.length && b >= answerD.length && b >= correct.length) {
-//         document.querySelector("#bottom").style.color = "black";
-//         document.querySelector("#bottom").style.opacity = "0.6";
-//     }
 // })
 
-// document.querySelector("#left").addEventListener("click", function () {
-//     document.querySelector(".modal").style.display = "block";
+// leftCard.addEventListener("click", function () {
+//     modal.style.display = "block";
 //     question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"];
 //     answerA = ["What is?", "sampleAnswerI", "sampleAnsweri"];
 //     answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"];
@@ -118,14 +125,10 @@ for (let x = 0; x < choices.length; x++) {
 //         document.querySelector("#a4").innerHTML = answerD[c];
 //         correct[b];
 //     }
-//     if (c >= question.length && c >= answerA.length && c >= answerB.length && c >= answerC.length && c >= answerD.length && c >= correct.length) {
-//         document.querySelector("#left").style.color = "black";
-//         document.querySelector("#left").style.opacity = "0.6";
-//     }
 // })
 
-document.querySelector("#top").addEventListener("click", function () {
-    document.querySelector(".modal").style.display = "block";
+topCard.addEventListener("click", function () {
+    modal.style.display = "block";
     question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "sampleQuestion3"];
     answerA = ["What is earth?", "Who is Ciara?", "sampleAnsweri"];
     answerB = ["What is water?", "Who is Kelly Rowland?", "sampleAnswerii"];
@@ -142,38 +145,34 @@ document.querySelector("#top").addEventListener("click", function () {
         document.querySelector("#a4").innerHTML = answerD[d];
         correct[d];
     }
-    if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
-        document.querySelector("#top").style.color = "black";
-        document.querySelector("#top").style.opacity = "0.6";
-    }
 })
 
-    for (let x = 0; x < choices.length; x++) {
-        choices[x].addEventListener("click", function (event) {
-            const selected = event.target.innerHTML
-            console.log(correct[d])
-            console.log(selected)
-            if (selected === correct[d]) {
-                console.log(score + points);
-                score = score + points
-            }
-            else {
-                console.log(score - points);
-                score = score - points
-            }
-            document.querySelector(".score").innerHTML = score;
-            document.querySelector(".modal").style.display = "none";
-            d++;
-            if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
-                document.querySelector("#top").style.color = "black";
-                document.querySelector("#top").style.opacity = "0.6";
-                document.querySelector("#top").style.border = "solid black";
-                document.querySelector("#top").addEventListener("click", function () {
-                document.querySelector(".modal").style.display = "none"
-                })
-            }
-        })
-    }
+for (let x = 0; x < choices.length; x++) {
+    choices[x].addEventListener("click", function (event) {
+        const selected = event.target.innerHTML
+        console.log(correct[d])
+        console.log(selected)
+        if (selected === correct[d]) {
+            console.log(score + points);
+            score = score + points
+        }
+        else {
+            console.log(score - points);
+            score = score - points
+        }
+        document.querySelector(".score").innerHTML = score;
+        modal.style.display = "none";
+        d++;
+        if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
+            topCard.style.color = "black";
+            topCard.style.opacity = "0.6";
+            topCard.style.border = "solid black";
+            topCard.addEventListener("click", function () {
+                modal.style.display = "none"
+            })
+        }
+    })
+}
 
 
 
@@ -194,11 +193,11 @@ document.querySelector("#top").addEventListener("click", function () {
 //         document.querySelector(".modal").style.display = "none";
 //         b++;
 //         if (d >= question.length && d >= answerA.length && d >= answerB.length && d >= answerC.length && d >= answerD.length && d >= correct.length) {
-//             document.querySelector("#bottom").style.color = "black";
-//             document.querySelector("#bottom").style.opacity = "0.6";
-//             document.querySelector("#bottom").style.border = "solid black";
-//             document.querySelector("#bottom").addEventListener("click", function () {
-//                 document.querySelector(".modal").style.display = "none"
+//             bottomCard.style.color = "black";
+//             bottomCard.style.opacity = "0.6";
+//             bottomCard.style.border = "solid black";
+//             bottomCard.addEventListener("click", function () {
+//                 modal.style.display = "none"
 //             })
 //         }
 //     })
@@ -218,14 +217,14 @@ document.querySelector("#top").addEventListener("click", function () {
 //             score = score - points
 //         }
 //         document.querySelector(".score").innerHTML = score;
-//         document.querySelector(".modal").style.display = "none";
+//         modal.style.display = "none";
 //         c++;
 //         if (c >= question.length && c >= answerA.length && c >= answerB.length && c >= answerC.length && c >= answerD.length && c >= correct.length) {
-//             document.querySelector("#left").style.color = "black";
-//             document.querySelector("#left").style.opacity = "0.6";
-//             document.querySelector("#left").style.border = "solid black";
-//             document.querySelector("#left").addEventListener("click", function () {
-//                 document.querySelector(".modal").style.display = "none"
+//             leftCard.style.color = "black";
+//             leftCard.style.opacity = "0.6";
+//             leftCard.style.border = "solid black";
+//             leftCard.addEventListener("click", function () {
+//                 modal.style.display = "none"
 //             })
 //         }
 //     })
