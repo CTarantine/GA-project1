@@ -8,7 +8,7 @@ General Assembly SEI- Project 1
 
 ## Overview
 
-The goal of this project was to HTML, CSS, and JavaScript to create a game that involved manipulating the DOM. I chose to create a unique version of the popular trivia game of Jeopardy.
+The goal of this project was to utilize HTML, CSS, and JavaScript to create a game that involved manipulating the DOM. I chose to create a unique version of the popular trivia game of Jeopardy.
 
 ![Photo of Game](Images/Screen&#32;Shot&#32;2019-08-09&#32;at&#32;10.47.04&#32;PM.png)
 
