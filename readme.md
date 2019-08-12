@@ -10,7 +10,7 @@ General Assembly SEI- Project 1
 
 The goal of this project was to HTML, CSS, and JavaScript to create a game that involved manipulating the DOM. I chose to create a unique version of the popular trivia game of Jeopardy.
 
-![Images/Screen&#32;Shot&#32;2019-08-09&#32;at&#32;10.47.04&#32;PM.png]
+![Photo of Game](Images/Screen&#32;Shot&#32;2019-08-09&#32;at&#32;10.47.04&#32;PM.png)
 
 ## How to play
 
@@ -28,7 +28,7 @@ The user has the option to challenge themselves to answer the question in 30 sec
 
 ## Wireframe
 
-![/Images/WireFrame.jpgimages]
+![Wireframe](/Images/WireFrame.jpgimages)
 
 ## languages used
 
