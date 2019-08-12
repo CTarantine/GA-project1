@@ -2,7 +2,7 @@
 
 General Assembly SEI- Project 1
 
-•Project site: [link]
+•Project site: [<https://mystifying-minsky-011106.netlify.com/>]
 
 •GitHub: [<https://github.com/CTarantine/GA-project1>]
 
