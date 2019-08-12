@@ -84,33 +84,36 @@ audio {
     background-color: black;
     padding-top: 20px;
 }
-.card:hover{
-border:solid yellow;
-cursor: pointer;
+
+.card:hover {
+    border: solid yellow;
+    cursor: pointer;
 }
 
 .modal {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 5;
     height: 100%;
     width: 100%;
     /* border: solid red; */
     padding: 5% 20%;
-    background-color:rgba(141, 138, 138, 0.8);
+    background-color: rgba(141, 138, 138, 0.8);
     display: none;
 }
-.close{
+
+.close {
     position: relative;
-    top:0;
+    top: 0;
     text-align: left;
     font-size: 2em;
 }
 
-.close:hover{
-    color:yellow;
+.close:hover {
+    color: yellow;
 }
+
 .question {
     /* border: solid yellow; */
     height: 20%;
@@ -118,7 +121,7 @@ cursor: pointer;
     color: white;
     text-shadow: 2px 2px 2px black;
     background-color: rgb(158, 92, 221);
-    text-align:center;
+    text-align: center;
 }
 
 .answers {
@@ -142,33 +145,36 @@ cursor: pointer;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
 }
-.answerbox:hover{
-    color:yellow;
+
+.answerbox:hover {
+    color: yellow;
     cursor: pointer;
 }
 
 .modal2 {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 5;
     height: 100%;
     width: 100%;
     /* border: solid red; */
     padding: 5% 20%;
-    background-color:rgba(141, 138, 138, 0.8);
+    background-color: rgba(141, 138, 138, 0.8);
     display: none;
 }
-.close2{
+
+.close2 {
     position: relative;
-    top:0;
+    top: 0;
     text-align: left;
     font-size: 2em;
 }
 
-.close2:hover{
-    color:yellow;
+.close2:hover {
+    color: yellow;
 }
+
 .question2 {
     /* border: solid yellow; */
     height: 20%;
@@ -176,7 +182,7 @@ cursor: pointer;
     color: white;
     text-shadow: 2px 2px 2px black;
     background-color: rgb(158, 92, 221);
-    text-align:center;
+    text-align: center;
 }
 
 .answers2 {
@@ -200,33 +206,36 @@ cursor: pointer;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
 }
-.answerbox2:hover{
-    color:yellow;
+
+.answerbox2:hover {
+    color: yellow;
     cursor: pointer;
 }
 
 .modal3 {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 5;
     height: 100%;
     width: 100%;
     /* border: solid red; */
     padding: 5% 20%;
-    background-color:rgba(141, 138, 138, 0.8);
+    background-color: rgba(141, 138, 138, 0.8);
     display: none;
 }
-.close3{
+
+.close3 {
     position: relative;
-    top:0;
+    top: 0;
     text-align: left;
     font-size: 2em;
 }
 
-.close3:hover{
-    color:yellow;
+.close3:hover {
+    color: yellow;
 }
+
 .question3 {
     /* border: solid yellow; */
     height: 20%;
@@ -234,7 +243,7 @@ cursor: pointer;
     color: white;
     text-shadow: 2px 2px 2px black;
     background-color: rgb(158, 92, 221);
-    text-align:center;
+    text-align: center;
 }
 
 .answers3 {
@@ -258,33 +267,36 @@ cursor: pointer;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
 }
-.answerbox3:hover{
-    color:yellow;
+
+.answerbox3:hover {
+    color: yellow;
     cursor: pointer;
 }
 
 .modal4 {
     position: fixed;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     z-index: 5;
     height: 100%;
     width: 100%;
     /* border: solid red; */
     padding: 5% 20%;
-    background-color:rgba(141, 138, 138, 0.8);
+    background-color: rgba(141, 138, 138, 0.8);
     display: none;
 }
-.close4{
+
+.close4 {
     position: relative;
-    top:0;
+    top: 0;
     text-align: left;
     font-size: 2em;
 }
 
-.close4:hover{
-    color:yellow;
+.close4:hover {
+    color: yellow;
 }
+
 .question4 {
     /* border: solid yellow; */
     height: 20%;
@@ -292,7 +304,7 @@ cursor: pointer;
     color: white;
     text-shadow: 2px 2px 2px black;
     background-color: rgb(158, 92, 221);
-    text-align:center;
+    text-align: center;
 }
 
 .answers4 {
@@ -316,7 +328,8 @@ cursor: pointer;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
 }
-.answerbox4:hover{
-    color:yellow;
+
+.answerbox4:hover {
+    color: yellow;
     cursor: pointer;
 }

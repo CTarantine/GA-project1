@@ -6,9 +6,9 @@ console.log("ello love")
 // })
 
 // audio from https://www.zapsplat.com/?s=voice+correct&post_type=music&sound-effect-category-id=
-let correctAnswer = new Audio(src="Audio/correct.mp3");
+let correctAnswer = new Audio(src = "Audio/correct.mp3");
 // audio from https://www.zapsplat.com/?s=voice+incorrect&post_type=music&sound-effect-category-id= 
-let incorrectAnswer = new Audio(src="Audio/incorrect.mp3");
+let incorrectAnswer = new Audio(src = "Audio/incorrect.mp3");
 
 
 let question = [];
@@ -149,7 +149,7 @@ for (let x = 0; x < choices.length; x++) {
 
 leftCard.addEventListener("click", function () {
     modal3.style.display = "block";
-    question = ["Coldest place in the universe", "State bordered by only one other state", "Author of The Bluest Eye","Symbolizes love and harmony"];
+    question = ["Coldest place in the universe", "State bordered by only one other state", "Author of The Bluest Eye", "Symbolizes love and harmony"];
     answerA = ["What is the constellation of Virgo?", "What is Maine?", "Who is Maya Angelou?", "What is lapis lazuli?"];
     answerB = ["What is the Boomerang Nebula?", "What is Washington?", "Who is Angela Davis", "What is rhodonite?"];
     answerC = ["What are the clouds of Jupiter?", "What is Michigan?", "Who is Toni Morrison?", "What is fluorite?"];
@@ -198,8 +198,8 @@ for (let x = 0; x < choices.length; x++) {
 
 topCard.addEventListener("click", function () {
     modal4.style.display = "block";
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "First sign of the zodiac","Name of Batman’s butler"];
-    answerA = ["What is earth?", "Who is Ciara?", "What is pisces?","Who is Alfred?"];
+    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "First sign of the zodiac", "Name of Batman’s butler"];
+    answerA = ["What is earth?", "Who is Ciara?", "What is pisces?", "Who is Alfred?"];
     answerB = ["What is water?", "Who is Kelly Rowland?", "What is Libra?", "Who is Eugene?"];
     answerC = ["What is fire?", "Who is Beyoncé?", "What is Aries?", "Who is Thomas?"];
     answerD = ["What is air?", "Who is Ari Lennox?", "What is Scorpio", "Who is Jeffrey?"];
