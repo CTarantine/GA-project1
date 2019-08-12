@@ -28,7 +28,7 @@ The user has the option to challenge themselves to answer the question in 30 sec
 
 ## Wireframe
 
-![Wireframe](/Images/WireFrame.jpgimages)
+![Wireframe](/Images/WireFrame.jpg)
 
 ## languages used
 
