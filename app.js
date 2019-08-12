@@ -50,12 +50,12 @@ let choices4 = document.querySelectorAll(".answerbox4");
 rightCard.addEventListener("click", function () {
     // console.log("working")
     modal.style.display = "block";
-    question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"],
-        answerA = ["sampleAnswer1", "sampleAnswerI", "sampleAnsweri"],
-        answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"],
-        answerC = ["What is?", "sampleAnswerIII", "sampleAnsweriii"],
-        answerD = ["What is?", "sampleAnswerIV", "sampleAnsweriv"],
-        correct = ["sampleAnswer1", "sampleAnswerI", "sampleAnsweriv"],
+    question = ["Largest bone in the human body", "Number of track events in a decathalon", "Greek god of dreams", "Stage name of Belcalis Almánzar"],
+        answerA = ["What is the femur?", "What is 3?", "Who is Zeus?", "What is Rico Nasty?"],
+        answerB = ["What is the tibia?", "What is 2?", "Who is Apollo?", "What is Cardi B?"],
+        answerC = ["What is the fibula?", "What is 4?", "Who is Morpheus?", "What is Rapsody?"],
+        answerD = ["What is the ulna?", "What is 7?", "Who is Posiedon?", "What is YG?"],
+        correct = ["What is the femur?", "What is 4?", "Who is Morpheus?", "What is Cardi B?"],
         points = parseFloat("300")
 
     if (a < question.length && a < answerA.length && a < answerB.length && a < answerC.length && a < answerD.length && a < correct.length) {
@@ -100,12 +100,12 @@ for (let x = 0; x < choices.length; x++) {
 
 bottomCard.addEventListener("click", function () {
     modal2.style.display = "block";
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom", "sampleQuestion2", "sampleQuestion3"];
-    answerA = ["What is earth?", "sampleAnswerI", "sampleAnsweri"];
-    answerB = ["What is water?", "sampleAnswerII", "sampleAnswerii"];
-    answerC = ["What is fire?", "sampleAnswerIII", "sampleAnsweriii"];
-    answerD = ["What is earth?", "sampleAnswerIV", "sampleAnsweriv"];
-    correct = ["What is water?", "sampleAnswerI", "sampleAnsweriv"];
+    question = ["Legendary Memphis rap group that won an academy award for best original song in 2006", "Hottest planet in the solar system", "Scientific study of insects", "Highest waterfall in the world"];
+    answerA = ["Who are the St Lunatics?", "What is Venus?", "What is ornithology?", "What is Niagara Falls?"];
+    answerB = ["Who are Three 6 Mafia?", "What is Mars?", "What is parasitology?", "What is Angel Falls?"];
+    answerC = ["Who are 8 Ball & MJG?", "What is Pluto?", "What is icthyology?", "What is Tugela Falls?"];
+    answerD = ["Who are UGK?", "What is Mercury?", "What is entomology?", "What is Gravity Falls?"];
+    correct = ["Who are Three 6 Mafia?", "What is Venus?", "What is entomology?", "What is Angel Falls?"];
     points = parseFloat("500");
 
     if (b < question.length && b < answerA.length && b < answerB.length && b < answerC.length && b < answerD.length && b < correct.length) {
@@ -149,12 +149,12 @@ for (let x = 0; x < choices.length; x++) {
 
 leftCard.addEventListener("click", function () {
     modal3.style.display = "block";
-    question = ["sampleQuestion1", "sampleQuestion2", "sampleQuestion3"];
-    answerA = ["What is?", "sampleAnswerI", "sampleAnsweri"];
-    answerB = ["What is?", "sampleAnswerII", "sampleAnswerii"];
-    answerC = ["What is?", "sampleAnswerIII", "sampleAnsweriii"];
-    answerD = ["What is?", "sampleAnswerIV", "sampleAnsweriv"];
-    correct = ["What is?", "sampleAnswerI", "sampleAnsweriv"];
+    question = ["Coldest place in the universe", "State bordered by only one other state", "Author of The Bluest Eye","Symbolizes love and harmony"];
+    answerA = ["What is the constellation of Virgo?", "What is Maine?", "Who is Maya Angelou?", "What is lapis lazuli?"];
+    answerB = ["What is the Boomerang Nebula?", "What is Washington?", "Who is Angela Davis", "What is rhodonite?"];
+    answerC = ["What are the clouds of Jupiter?", "What is Michigan?", "Who is Toni Morrison?", "What is fluorite?"];
+    answerD = ["What is the surface of Mercury?", "What is New Hampshire?", "Who is Audre Lorde?", "What is rose quartz?"];
+    correct = ["What is the Boomerang Nebula?", "What is Maine?", "Who is Toni Morrison?", "What is rose quartz?"];
     points = parseFloat("700");
 
     if (c < question.length && c < answerA.length && c < answerB.length && c < answerC.length && c < answerD.length && c < correct.length) {
@@ -198,12 +198,12 @@ for (let x = 0; x < choices.length; x++) {
 
 topCard.addEventListener("click", function () {
     modal4.style.display = "block";
-    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "sampleQuestion3"];
-    answerA = ["What is earth?", "Who is Ciara?", "sampleAnsweri"];
-    answerB = ["What is water?", "Who is Kelly Rowland?", "sampleAnswerii"];
-    answerC = ["What is fire?", "Who is Beyoncé?", "sampleAnsweriii"];
-    answerD = ["What is air?", "Who is Ari Lennox?", "sampleAnsweriv"];
-    correct = ["What is water?", "Who is Beyoncé?", "sampleAnsweriv"];
+    question = ["Molecule made up of 2 hydrogen atoms and 1 oxygen atom.", "Mother of Blue, Sir, and Rumi.", "First sign of the zodiac","Name of Batman’s butler"];
+    answerA = ["What is earth?", "Who is Ciara?", "What is pisces?","Who is Alfred?"];
+    answerB = ["What is water?", "Who is Kelly Rowland?", "What is Libra?", "Who is Eugene?"];
+    answerC = ["What is fire?", "Who is Beyoncé?", "What is Aries?", "Who is Thomas?"];
+    answerD = ["What is air?", "Who is Ari Lennox?", "What is Scorpio", "Who is Jeffrey?"];
+    correct = ["What is water?", "Who is Beyoncé?", "What is Aries?", "Who is Alfred?"];
     points = parseFloat("100");
 
     if (d < question.length && d < answerA.length && d < answerB.length && d < answerC.length && d < answerD.length && d < correct.length) {
