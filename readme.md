@@ -2,9 +2,15 @@
 
 General Assembly SEI- Project 1
 
-•Project site: [a link]
+•Project site: [link]
 
-•GitHub: [a link](https://github.com/CTarantine/GA-project1)
+•GitHub: [<https://github.com/CTarantine/GA-project1>]
+
+## Overview
+
+The goal of this project was to HTML, CSS, and JavaScript to create a game that involved manipulating the DOM. I chose to create a unique version of the popular trivia game of Jeopardy.
+
+![Images/Screen&#32;Shot&#32;2019-08-09&#32;at&#32;10.47.04&#32;PM.png]
 
 ## How to play
 
@@ -21,6 +27,8 @@ Cards will black out afer all questions in that category have been answered.
 The user has the option to challenge themselves to answer the question in 30 seconds or less by playing a clip of Jeopardy themed music when the question appears.
 
 ## Wireframe
+
+![/Images/WireFrame.jpgimages]
 
 ## languages used
 
