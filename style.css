@@ -102,12 +102,10 @@ audio {
     background-color: rgba(141, 138, 138, 0.8);
     display: none;
 }
-
+/*contains audio player*/
 .close {
     position: relative;
     top: 0;
-    text-align: left;
-    font-size: 2em;
 }
 
 .close:hover {
@@ -138,12 +136,13 @@ audio {
     /* border: solid green; */
     height: 100px;
     width: 500px;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
+    border:solid;
 }
 
 .answerbox:hover {
@@ -167,8 +166,6 @@ audio {
 .close2 {
     position: relative;
     top: 0;
-    text-align: left;
-    font-size: 2em;
 }
 
 .close2:hover {
@@ -199,12 +196,13 @@ audio {
     /* border: solid green; */
     height: 100px;
     width: 500px;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
+    border:solid;
 }
 
 .answerbox2:hover {
@@ -228,8 +226,6 @@ audio {
 .close3 {
     position: relative;
     top: 0;
-    text-align: left;
-    font-size: 2em;
 }
 
 .close3:hover {
@@ -260,12 +256,13 @@ audio {
     /* border: solid green; */
     height: 100px;
     width: 500px;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
+    border:solid;
 }
 
 .answerbox3:hover {
@@ -289,8 +286,6 @@ audio {
 .close4 {
     position: relative;
     top: 0;
-    text-align: left;
-    font-size: 2em;
 }
 
 .close4:hover {
@@ -321,12 +316,13 @@ audio {
     /* border: solid green; */
     height: 100px;
     width: 500px;
-    font-size: 3em;
+    font-size: 2em;
     color: white;
     text-shadow: 2px 2px 2px black;
     text-align: center;
     background-color: rgb(158, 92, 221);
     cursor: pointer;
+    border:solid;
 }
 
 .answerbox4:hover {
